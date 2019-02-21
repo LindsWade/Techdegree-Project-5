@@ -1,0 +1,94 @@
+ $color-primary: #76F9D8;
+
+// .btn {
+ // @include bg-colors($ui-colors);
+ //}
+
+
+ .btn--default {
+  color: #fff;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius:.35em;
+  background-color: $color-primary;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+
+
+    .btn--success{
+  color: #fff;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius:.35em;
+  background-color: #9FECB4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+
+  .btn--error{
+  color: #fff;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius:.35em;
+  background-color: #F5AFB4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+
+  .btn--warning {
+  color: #fff;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius:.35em;
+  background-color: #FB9982;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.btn--info {
+  color: #fff;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius:.35em;
+  background-color: #9082BD;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.theme__colors{}

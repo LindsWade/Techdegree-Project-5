@@ -1,0 +1,23 @@
+
+ %img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+ .img--logo{
+    @extend %img;
+  }
+
+.img--avatar {
+  @extend %img;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.img--frame {
+  @extend %img;
+  margin-top: 20px;
+  width: 75%;
+}

@@ -1,0 +1,124 @@
+
+
+$color-primary: #76F9D8;
+$fountain-blue: #52bab3;
+$emerald: #5ece7f;
+$sunglo: #e67478;
+$coral: #ff784f;
+$purple-majesty: #9279c3;
+$scooter: 39add1;
+
+//UI Colors
+
+//$ui-colors: (
+  //default: $fountain-blue,
+  //success: $emerald,
+  //error: $sunglo,
+  //warning: $coral,
+  //info: $purple-majesty
+//);
+
+
+$font-stack-primary: 'Raleway', sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
+
+$brkpoint-sm      :  1px;
+$brkpoint-md      :  480px;
+$brkpoint-lg      :  1100px;
+
+$max-width: 1000px;
+
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  }
+
+
+p{
+  text-align: center;
+  color: #C0C0C0;
+  font-weight: 200px;
+  }
+
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  }
+
+  
+
+  .header {
+    margin: 0;
+  }
+
+.grid, 
+.nav {
+  display: flex;
+  flex-direction: column; 
+}
+
+.img--logo{
+  align-self: center;
+}
+
+ 
+
+  .grid__row{
+    border: 5px solid red;
+  }
+
+  .grid__col--3{
+    display: inline-block;
+    border: 5px solid blue;
+  }
+
+  .grid__col--4{
+    border: 5px solid orange;
+  }
+
+  .grid__col--5{
+    border: 5px solid purple;
+  }
+
+  .grid__col--6{
+    border: 5px dotted purple;
+  }
+
+  .grid__col--7{
+    border: 5px dotted green;
+  }
+
+  .grid__col--8{
+    border: 5px dotted blue;
+  }
+
+  .grid__col--9{
+    display: inline-block;
+    border: 5px solid green;
+    padding: 0;
+  }
+
+
+ /*Media Queries*/
+
+  @include media (medium) {
+  
+  .nav__item {
+    display: inline-block;
+    }
+
+  .grid,
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+  }
+
+ 
+
+  
+
+
