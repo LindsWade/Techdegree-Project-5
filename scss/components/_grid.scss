@@ -12,19 +12,17 @@ $g-container-max-width: 1050px;
   @return $g-context;
 }
 
-// Calculate grid columns
 
-@for $i from 1 through $g-col-count {
 
-$context: g-context($g-col-width, $g-col-count, $g-gutter-width);
-$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
 
-// Generate column modifer classes
-    .grid__col--#{$i} {
-    width: percentage($target / $context);
-    }
+[class*="grid__col--"] {
+  width: 100%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
 
 .centered {
     float: none;
@@ -148,6 +146,69 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
   margin-right: auto;
   width: 100%;
   }
+
+
+  /*Media Queries*/
+
+  @include media (medium) {
+
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+    // [class^="grid__col--"]:last-of-type {
+  //   float: none !important;
+  // }  
+  
+
+  .nav__item {
+    display: inline-block;
+    }
+
+
+  .grid__row{
+    display: flex;
+    width: 100%;
+  }
+
+  .centered .grid__col--7{
+    margin: 0 auto;
+  }
+
+
+// Calculate grid columns
+
+@for $i from 1 through $g-col-count {
+
+$context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+// Generate column modifer classes
+    .grid__col--#{$i} {
+    width: percentage($target / $context);
+    }
+}
+
+  }
+
+
+  //column styles
+[class^="grid__col--"]{
+ @include media(small){
+   margin-top:em(12px);
+   margin-bottom:em(12px);
+ }
+ @include media(medium){
+   float:left;
+   min-height: 1px;
+   padding-left:10px;
+   padding-right:10px;
+   &:last-of-type{
+     float:right;
+   }
+ }
+}
 
 
 
