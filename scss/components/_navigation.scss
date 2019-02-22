@@ -1,5 +1,6 @@
 %nav {
     padding: 5%;
+
   }
 
 
@@ -9,6 +10,7 @@
   text-align: center;
     a:link{
       text-decoration: none;
+      color: #C0C0C0;
     }
 
     a:hover{
@@ -26,5 +28,9 @@
       margin-left: auto;
       margin-right: auto;
       width: 100%;
+    }
+
+    a:visited{
+      color: #C0C0C0;
     }
  }

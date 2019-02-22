@@ -339,7 +339,7 @@ table {
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: .35em;
-  background-color: #76F9D8;
+  background-color: #52bab3;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -468,16 +468,18 @@ table {
 .grid {
   width: 90%; }
 
+.grid__row {
+  padding: 5%; }
+
 .grid__col--6 {
-  color: #fff;
+  color: grey;
   display: block;
   font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: .35em;
-  background-color: #9FECB4;
+  background-color: #52bab3;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -485,15 +487,14 @@ table {
   width: 100%; }
 
 .grid__col--4 {
-  color: #fff;
+  color: grey;
   display: block;
   font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: .35em;
-  background-color: #9FECB4;
+  background-color: #39add1;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -501,15 +502,14 @@ table {
   width: 100%; }
 
 .grid__col--3 {
-  color: #fff;
+  color: grey;
   display: block;
   font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: .35em;
-  background-color: #9FECB4;
+  background-color: #9279c3;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -517,15 +517,14 @@ table {
   width: 100%; }
 
 .grid__col--5 {
-  color: #fff;
+  color: grey;
   display: block;
   font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: .35em;
-  background-color: #9FECB4;
+  background-color: #5ece7f;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -533,15 +532,14 @@ table {
   width: 100%; }
 
 .grid__col--7 {
-  color: #fff;
+  color: grey;
   display: block;
   font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: .35em;
-  background-color: #9FECB4;
+  background-color: #e67478;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -549,15 +547,21 @@ table {
   width: 100%; }
 
 .grid__col--8 {
-  color: #fff;
+  color: grey;
   display: block;
   font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: .35em;
-  background-color: #9FECB4;
+  background-color: #ff784f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.grid__col--9 {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -571,6 +575,7 @@ table {
 
 .img--avatar {
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 50%; }
 
 .img--frame {
@@ -583,7 +588,8 @@ table {
 .nav__item {
   text-align: center; }
   .nav__item a:link {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #C0C0C0; }
   .nav__item a:hover {
     color: #fff;
     display: block;
@@ -599,9 +605,10 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 100%; }
+  .nav__item a:visited {
+    color: #C0C0C0; }
 
 .container {
-  border: 10px solid black;
   padding: 10%; }
 
 .link {
@@ -612,10 +619,11 @@ table {
 
 .blockquote {
   color: gray;
-  font-size: 30px;
+  font-size: 20px;
+  font-style: italic;
   border-left: 5px solid #00ffcc;
   border-radius: 5px;
-  margin: 15%; }
+  margin: 5%; }
 
 .headline--primary, .headline--secondary {
   text-align: left; }
@@ -631,7 +639,6 @@ table {
   font-family: Arial, sans-serif; }
 
 p {
-  text-align: center;
   color: #C0C0C0;
   font-weight: 200px; }
 
@@ -651,33 +658,6 @@ ul {
 .img--logo {
   align-self: center; }
 
-.grid__row {
-  border: 5px solid red; }
-
-.grid__col--3 {
-  display: inline-block;
-  border: 5px solid blue; }
-
-.grid__col--4 {
-  border: 5px solid orange; }
-
-.grid__col--5 {
-  border: 5px solid purple; }
-
-.grid__col--6 {
-  border: 5px dotted purple; }
-
-.grid__col--7 {
-  border: 5px dotted green; }
-
-.grid__col--8 {
-  border: 5px dotted blue; }
-
-.grid__col--9 {
-  display: inline-block;
-  border: 5px solid green;
-  padding: 0; }
-
 /*Media Queries*/
 @media (min-width: 481px) {
   .nav__item {
@@ -687,5 +667,95 @@ ul {
   .nav {
     flex-direction: row;
     justify-content: space-between; } }
+.grid__col--6 {
+  color: grey;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: .35em;
+  background-color: #52bab3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.grid__col--4 {
+  color: grey;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: .35em;
+  background-color: #39add1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid__col--3 {
+  color: grey;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: .35em;
+  background-color: #9279c3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid__col--5 {
+  color: grey;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: .35em;
+  background-color: #5ece7f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid__col--7 {
+  color: grey;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: .35em;
+  background-color: #e67478;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid__col--8 {
+  color: grey;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: .35em;
+  background-color: #ff784f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid__col--9 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=styles.css.map */
