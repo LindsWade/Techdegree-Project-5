@@ -1,8 +1,12 @@
  $color-primary: #76F9D8;
 
-// .btn {
- // @include bg-colors($ui-colors);
- //}
+.btn {
+  @include bg-colors($ui-colors);
+ }
+
+ .theme__colors{
+  @include bg-colors($ui-colors);
+ }
 
 
  .btn--default {
@@ -14,7 +18,6 @@
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius:.35em;
-  background-color: #52bab3;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -32,7 +35,6 @@
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius:.35em;
-  background-color: #9FECB4;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -49,7 +51,6 @@
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius:.35em;
-  background-color: #F5AFB4;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -66,7 +67,6 @@
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius:.35em;
-  background-color: #FB9982;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -83,7 +83,6 @@
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius:.35em;
-  background-color: #9082BD;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -91,4 +90,4 @@
   width: 100%;
 }
 
-.theme__colors{}
+

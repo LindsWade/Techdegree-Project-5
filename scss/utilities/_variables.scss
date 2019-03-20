@@ -1,26 +1,27 @@
 
 
 $color-primary: #76F9D8;
-$fountain-blue: #52bab3;
+$fountain-blue: #51ddfc;
 $emerald: #5ece7f;
 $sunglo: #e67478;
 $coral: #ff784f;
 $purple-majesty: #9279c3;
-$scooter: 39add1;
+$scooter: #39ADD1;
 
 //UI Colors
 
-//$ui-colors: (
-  //default: $fountain-blue,
-  //success: $emerald,
-  //error: $sunglo,
-  //warning: $coral,
-  //info: $purple-majesty
-//);
+$ui-colors: (
+  default: $fountain-blue,
+  success: $emerald,
+  error: $sunglo,
+  warning: $coral,
+  info: $purple-majesty
+);
 
 
-//$font-stack-primary: 'Raleway', sans-serif;
-$font-stack-secondary: 'Bree Serif', serif;//
+
+$font-stack-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
 
 $brkpoint-sm      :  1px;
 $brkpoint-md      :  480px;
@@ -31,15 +32,13 @@ $max-width: 1000px;
 
 * {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: $font-stack-primary;
   }
-
 
 p{
-  color: #C0C0C0;
-  font-weight: 200px;
+  color:  #808080;
+  font-weight: normal;
   }
-
 
 ul{
   list-style-type: none;
@@ -47,20 +46,17 @@ ul{
   margin-left: 0;
   }
 
-
   .header {
     margin: 0;
   }
 
 
 
-.img--logo{
-  align-self: center;
-}
 
 
 
- 
+
+
 
 
  
