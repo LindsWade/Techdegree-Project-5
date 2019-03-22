@@ -14,13 +14,13 @@ $g-container-max-width: 1050px;
 
 
 .theme__colors.grid__col{
- &--12 {background-color:lighten($emerald, 10%);}
- &--4 {background-color:$scooter ;}
- &--3 {background-color:$purple-majesty ;}
- &--5 {background-color:$emerald;}
- &--8 {background-color:$coral;}
- &--7 {background-color:$sunglo;}
- &--6 {background-color:$fountain-blue;}
+ &--12 {background-color:lighten($color-primary, 10%);}
+ &--4 {background-color:lighten($fountain-blue, 10%);}
+ &--3 {background-color:lighten($purple-majesty, 10%);}
+ &--5 {background-color:lighten($emerald, 10%);}
+ &--8 {background-color:lighten($coral, 10%);}
+ &--7 {background-color:lighten($sunglo, 10%);}
+ &--6 {background-color:lighten($scooter, 10%);}
  }
 
 [class*="grid__col--"] {
@@ -45,7 +45,7 @@ $g-container-max-width: 1050px;
 }
 
 .grid__row{
-    padding: 5%;
+    padding: 10px;
 }
 
 
@@ -62,6 +62,10 @@ $g-container-max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+    @include media (medium) {
+    display: flex;
+  }
+
   }
 
 
@@ -183,6 +187,7 @@ $g-container-max-width: 1050px;
 
   .nav__item {
     display: inline-block;
+    padding: 20px;
     }
 
 
@@ -193,6 +198,31 @@ $g-container-max-width: 1050px;
 
   .centered .grid__col--7{
     margin: 0 auto;
+  }
+
+  .grid__col--12 .btn--default  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .grid__col--12 .btn--success  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .grid__col--12 .btn--error  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .grid__col--12 .btn--warning  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .grid__col--12 .btn--info  {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 

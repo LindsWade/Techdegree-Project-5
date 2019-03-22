@@ -19,7 +19,6 @@ $ui-colors: (
 );
 
 
-
 $font-stack-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-stack-secondary: 'Bree Serif', serif;
 
@@ -29,24 +28,7 @@ $brkpoint-lg      :  1100px;
 
 $max-width: 1000px;
 
-
-* {
-  box-sizing: border-box;
-  font-family: $font-stack-primary;
-  }
-
-p{
-  color:  #808080;
-  font-weight: normal;
-  }
-
-ul{
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-  }
-
-  .header {
+.header {
     margin: 0;
   }
 
