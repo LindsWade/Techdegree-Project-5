@@ -731,7 +731,8 @@ table {
   color: #C0C0C0; }
 
 .container {
-  padding: 10%; }
+  padding: 10%;
+  max-width: 1400px; }
 
 .card {
   line-height: 1.5; }
